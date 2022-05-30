@@ -1,4 +1,4 @@
-<?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
+<?php if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 	die();
 } ?>
 
@@ -6,7 +6,7 @@
     <div class="header-menu">
         <ul>
 			<?php foreach ($arResult as $arItem): ?>
-                <li class="menu-item"><a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a></li>
+                <li class="menu-item"><a href="<?= $arItem['LINK'] ?>"><?= $arItem['TEXT'] ?></a></li>
 			<? endforeach ?>
         </ul>
         <a class="roundBtn" href="tel:<?= sprint_options_get('PHONE') ?>"><?= sprint_options_get('PHONE') ?></a>
@@ -17,7 +17,7 @@
             <div class="wrapper">
                 <ul>
 					<?php foreach ($arResult as $arItem): ?>
-                        <li class="menu-item"><a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a></li>
+                        <li class="menu-item"><a href="<?= $arItem['LINK'] ?>"><?= $arItem['TEXT'] ?></a></li>
 					<? endforeach ?>
                 </ul>
             </div>
