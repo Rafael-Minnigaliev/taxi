@@ -9,7 +9,7 @@
                 <li class="menu-item"><a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a></li>
 			<? endforeach ?>
         </ul>
-        <a class="roundBtn" href="#"><?= sprint_options_get('PHONE') ?></a>
+        <a class="roundBtn" href="tel:<?= sprint_options_get('PHONE') ?>"><?= sprint_options_get('PHONE') ?></a>
         <div class="burger">
             <input type="checkbox" id="active">
             <label for="active" class="menu-btn"><span></span></label>
