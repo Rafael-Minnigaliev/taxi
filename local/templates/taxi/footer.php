@@ -43,18 +43,18 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             <div class="">
                 <h2>Контакты</h2>
                 <br>
-                <p style="padding-bottom: 24px">г. Уфа, ул. Тестовая, д. 28, стр. 1, офис 205</p>
+                <p style="padding-bottom: 24px"><?= sprint_options_get('ADDRE') ?></p>
                 <p>Время работы офиса:</p>
                 <p>Пн-пт с 10:00 до 19:00</p>
                 <p>Время работы диспетчерской:</p>
                 <p>с 9:00 до 21:00, без выходных</p><br>
                 <div class="content">
-                    <a href="tel:+79991234569" class="bt">+7 (999) 123-45-69</a><br><br>
-                    <a href="" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/facebook.svg" alt=""></a>
-                    <a href="" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/youtube.svg" alt=""></a>
-                    <a href="" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/instagram.svg" alt=""></a>
-                    <a href="" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/telegram.svg" alt=""></a>
-                    <a href="" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/vk.svg" alt=""></a>
+                    <a href="tel:+79991234569" class="bt"><?= sprint_options_get('PHONE2') ?></a><br><br>
+                    <a href="<?= sprint_options_get('FACE_BOOK') ?>" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/facebook.svg" alt=""></a>
+                    <a href="<?= sprint_options_get('YOUTUBE') ?>" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/youtube.svg" alt=""></a>
+                    <a href="<?= sprint_options_get('INSTAGRAM') ?>" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/instagram.svg" alt=""></a>
+                    <a href="<?= sprint_options_get('TG') ?>" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/telegram.svg" alt=""></a>
+                    <a href="<?= sprint_options_get('VK') ?>" target="_blank"><img src="<?= SITE_TEMPLATE_PATH?>/images/vk.svg" alt=""></a>
                 </div>
                 <br>
                 <a class="gray" id="privacy">Политика конфиденциальности</a>

@@ -1,2 +1,3 @@
 <?php
-CModule::IncludeModule("sprint.options");
+use Bitrix\Main\Loader;
+Loader::includeModule("sprint.options");
