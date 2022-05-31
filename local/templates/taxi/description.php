@@ -5,8 +5,6 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 use Bitrix\Main\Localization\Loc;
 
-Loc::loadLanguageFile(__FILE__ . '/ru/description.php');
-
 $arTemplate = array(
 	'NAME' => Loc::getMessage('NAME'),
 	'DESCRIPTION' => Loc::getMessage('DESCRIPTION')
