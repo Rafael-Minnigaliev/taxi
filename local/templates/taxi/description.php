@@ -3,8 +3,12 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 	die();
 }
 
+use Bitrix\Main\Localization\Loc;
+
+Loc::loadLanguageFile(__FILE__ . '/ru/description.php');
+
 $arTemplate = array(
-	'NAME' => 'Шаблон сайта такси',
-	'DESCRIPTION' => ''
+	'NAME' => Loc::getMessage('NAME'),
+	'DESCRIPTION' => Loc::getMessage('DESCRIPTION')
 );
 ?>
