@@ -4,6 +4,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 }
 
 use Bitrix\Main\Page\Asset;
+
 ?>
 
 
@@ -14,13 +15,13 @@ use Bitrix\Main\Page\Asset;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<?php $APPLICATION->ShowHead(); ?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
-    <?php Asset::getInstance()->AddCss(SITE_TEMPLATE_PATH . '/css/style.css')?>
-	<?php Asset::getInstance()->AddCss('https://unpkg.com/aos@2.3.1/dist/aos.css')?>
-	<?php Asset::getInstance()->AddCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css')?>
-	<?php Asset::getInstance()->AddCss('https://unpkg.com/swiper@7/swiper-bundle.min.css')?>
-	<?php Asset::getInstance()->AddJs('https://unpkg.com/swiper@7/swiper-bundle.min.js')?>
-	<?php Asset::getInstance()->AddJs(SITE_TEMPLATE_PATH.'/js/main.js')?>
-	<?php Asset::getInstance()->AddJs(SITE_TEMPLATE_PATH.'/js/aos.js')?>
+	<?php Asset::getInstance()->AddCss(SITE_TEMPLATE_PATH . '/css/style.css') ?>
+	<?php Asset::getInstance()->AddCss('https://unpkg.com/aos@2.3.1/dist/aos.css') ?>
+	<?php Asset::getInstance()->AddCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css') ?>
+	<?php Asset::getInstance()->AddCss('https://unpkg.com/swiper@7/swiper-bundle.min.css') ?>
+	<?php Asset::getInstance()->AddJs('https://unpkg.com/swiper@7/swiper-bundle.min.js') ?>
+	<?php Asset::getInstance()->AddJs(SITE_TEMPLATE_PATH . '/js/main.js') ?>
+	<?php Asset::getInstance()->AddJs(SITE_TEMPLATE_PATH . '/js/aos.js') ?>
     <script>AOS.init();</script>
 </head>
 <body>
@@ -40,7 +41,7 @@ use Bitrix\Main\Page\Asset;
 				'MAX_LEVEL' => '1',
 				'MENU_CACHE_GET_VARS' => array(0 => '',),
 				'MENU_CACHE_TIME' => '3600',
-				'MENU_CACHE_TYPE' => 'N',
+				'MENU_CACHE_TYPE' => 'Y',
 				'MENU_CACHE_USE_GROUPS' => 'Y',
 				'ROOT_MENU_TYPE' => 'top',
 				'USE_EXT' => 'N'

@@ -25,6 +25,18 @@ return (new Builder)
 		'DEFAULT' => '+7 (999) 123-45-69',
 		'WIDTH'   => '400',
 	])
+	->addTab('Время работы офиса')
+	->addOption('OFFICE_HOURS', [
+		'TITLE'   => 'Время работы офиса компании',
+		'DEFAULT' => 'Пн-пт с 10:00 до 19:00',
+		'WIDTH'   => '400',
+	])
+	->addTab('Время работы диспетчерской')
+	->addOption('DISPATCHERS_WORKING_HOURS', [
+		'TITLE'   => 'Время работы диспетчерской компании',
+		'DEFAULT' => 'с 9:00 до 21:00, без выходных',
+		'WIDTH'   => '400',
+	])
 	->addTab('Соц-сети')
 	->addOption('FACE_BOOK', [
 		'TITLE'   => 'Фейсбук',

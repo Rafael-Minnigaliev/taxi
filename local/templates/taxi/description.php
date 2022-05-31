@@ -9,4 +9,3 @@ $arTemplate = array(
 	'NAME' => Loc::getMessage('NAME'),
 	'DESCRIPTION' => Loc::getMessage('DESCRIPTION')
 );
-?>
