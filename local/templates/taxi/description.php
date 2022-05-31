@@ -1,9 +1,12 @@
 <?
-if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 	die();
+}
 
-$arTemplate = Array(
-	'NAME' => 'Шаблон сайта такси',
-	'DESCRIPTION' => ''
+use Bitrix\Main\Localization\Loc;
+
+$arTemplate = array(
+	'NAME' => Loc::getMessage('NAME'),
+	'DESCRIPTION' => Loc::getMessage('DESCRIPTION')
 );
 ?>
