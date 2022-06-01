@@ -5,9 +5,9 @@ use Sprint\Options\Builder\Builder;
 return (new Builder)
     ->setTitle('Настройки контента')
     ->setSort(60)
-    ->addPage('Шапка')
+    ->addPage('Сайт')
     ->addTab('Телефон')
-    ->addOption('PHONE1', [
+    ->addOption('PHONE', [
         'TITLE'   => 'Телефон компании',
         'DEFAULT' => '+7 (999) 123-45-69',
         'WIDTH'   => '400',
@@ -17,12 +17,6 @@ return (new Builder)
 	->addOption('ADDRESS', [
 		'TITLE'   => 'Адрес компании',
 		'DEFAULT' => 'г. Уфа, ул. Тестовая, д. 28, стр. 1, офис 205',
-		'WIDTH'   => '400',
-	])
-	->addTab('Телефон')
-	->addOption('PHONE2', [
-		'TITLE'   => 'Телефон компании',
-		'DEFAULT' => '+7 (999) 123-45-69',
 		'WIDTH'   => '400',
 	])
 	->addTab('Время работы офиса')
