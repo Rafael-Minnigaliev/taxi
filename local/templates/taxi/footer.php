@@ -80,3 +80,4 @@ use Bitrix\Main\Localization\Loc;
         </div>
     </div>
 </footer>
+</body>
