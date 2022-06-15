@@ -2,7 +2,6 @@
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 	die();
 }
-
 use Bitrix\Main\Page\Asset;
 ?>
 
@@ -14,7 +13,6 @@ use Bitrix\Main\Page\Asset;
 	<?php $APPLICATION->ShowHead(); ?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
 	<?php
-
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/style.css');
 	Asset::getInstance()->addString('<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">');
 	Asset::getInstance()->addString('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>');
@@ -23,6 +21,41 @@ use Bitrix\Main\Page\Asset;
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/aos.js');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
 	?>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const menuSwiper = ['Slide 1', 'Slide 2', 'Slide 3'];
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+            centeredSlides: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                // 	renderBullet: function (index, className) {
+                // 		return '<span class="' + className + '">' + (menuSwiper[index]) + '</span>';
+                // 	},
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // autoplay: {
+            // 	delay: 2500,
+            // 	disableOnInteraction: false,
+            // },
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
     <script>AOS.init();</script>
 <body>
 <?php $APPLICATION->ShowPanel(); ?>
