@@ -1,4 +1,4 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
+<? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 	die();
 }
 ?>
@@ -17,8 +17,8 @@
                 </div>
             </div>
             <div class="card-image">
-                <img src="<?= $arResult['ITEMS'][0]["PREVIEW_PICTURE"]["SRC"] ?>"
-                     alt="<?= $arResult['ITEMS'][0]["PREVIEW_PICTURE"]["ALT"] ?>">
+                <img src="<?= $arResult['ITEMS'][0]['PREVIEW_PICTURE']['SRC'] ?>"
+                     alt="<?= $arResult['ITEMS'][0]['PREVIEW_PICTURE']['ALT'] ?>">
             </div>
         </div>
 
@@ -33,8 +33,8 @@
                 </div>
             </div>
             <div data-aos="fade-right" class="card-image">
-                <img src="<?= $arResult['ITEMS'][1]["PREVIEW_PICTURE"]["SRC"] ?>"
-                     alt="<?= $arResult['ITEMS'][1]["PREVIEW_PICTURE"]["ALT"] ?>">
+                <img src="<?= $arResult['ITEMS'][1]['PREVIEW_PICTURE']['SRC'] ?>"
+                     alt="<?= $arResult['ITEMS'][1]['PREVIEW_PICTURE']['ALT'] ?>">
             </div>
         </div>
         <!---->
@@ -49,8 +49,8 @@
                 </div>
             </div>
             <div class="card-image">
-                <img src="<?= $arResult['ITEMS'][2]["PREVIEW_PICTURE"]["SRC"] ?>"
-                     alt="<?= $arResult['ITEMS'][2]["PREVIEW_PICTURE"]["ALT"] ?>">
+                <img src="<?= $arResult['ITEMS'][2]['PREVIEW_PICTURE']['SRC'] ?>"
+                     alt="<?= $arResult['ITEMS'][2]['PREVIEW_PICTURE']['ALT'] ?>">
             </div>
         </div>
         <!---->
