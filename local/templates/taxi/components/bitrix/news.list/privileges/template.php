@@ -6,6 +6,7 @@
 <section class="privilege" id="about">
     <div class="container">
         <a href="/taksopark/"><h2 class="text-center">С нами удобно и выгодно</h2></a>
+
         <div data-aos="fade-down" class="card-container">
             <div class="card-item">
                 <div class="item-headline">
@@ -54,7 +55,6 @@
             </div>
         </div>
         <!---->
-
     </div>
 </section>
 

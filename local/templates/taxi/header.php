@@ -57,6 +57,7 @@ use Bitrix\Main\Page\Asset;
         });
     </script>
     <script>AOS.init();</script>
+</head>
 <body>
 <?php $APPLICATION->ShowPanel(); ?>
 <header class="header-wrapper">
