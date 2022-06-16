@@ -4,6 +4,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 }
 
 use Bitrix\Main\Page\Asset;
+
 ?>
 
 <!doctype html>
@@ -58,6 +59,7 @@ use Bitrix\Main\Page\Asset;
         });
     </script>
     <script>AOS.init();</script>
+</head>
 <body>
 <?php $APPLICATION->ShowPanel(); ?>
 <header class="header-wrapper">
