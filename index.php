@@ -2,18 +2,6 @@
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 $APPLICATION->SetTitle('ТКМ - Парк такси');
 ?>
-    <!-- modals -->
-    <div id="modal-container">
-        <div class="modal-background">
-            <div class="modal">
-                <div class="container">
-                    <div class="closeModal"></div>
-                    <h2 id="modal_title">inner</h2>
-                    <p id="modal_text">inner</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
 <? $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 

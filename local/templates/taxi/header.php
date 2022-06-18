@@ -85,3 +85,16 @@ use Bitrix\Main\Page\Asset;
 		); ?>
     </div>
 </header>
+
+<!-- modals -->
+<div id="modal-container">
+    <div class="modal-background">
+        <div class="modal">
+            <div class="container">
+                <div class="closeModal"></div>
+                <h2 id="modal_title">inner</h2>
+                <p id="modal_text">inner</p>
+            </div>
+        </div>
+    </div>
+</div>
