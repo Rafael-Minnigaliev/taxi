@@ -2,18 +2,6 @@
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 $APPLICATION->SetTitle('ТКМ - Парк такси');
 ?>
-    <!-- modals -->
-    <div id="modal-container">
-        <div class="modal-background">
-            <div class="modal">
-                <div class="container">
-                    <div class="closeModal"></div>
-                    <h2 id="modal_title">inner</h2>
-                    <p id="modal_text">inner</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
 <? $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
@@ -51,7 +39,7 @@ $APPLICATION->SetTitle('ТКМ - Парк такси');
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "N",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "2",
+		"NEWS_COUNT" => "",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -73,10 +61,10 @@ $APPLICATION->SetTitle('ТКМ - Парк такси');
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
-		"SORT_BY1" => "ID",
-		"SORT_BY2" => "ID",
-		"SORT_ORDER1" => "DESC",
-		"SORT_ORDER2" => "ASC",
+		"SORT_BY1" => "SORT",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "ASC",
+		"SORT_ORDER2" => "DESC",
 		"STRICT_SECTION_CHECK" => "N",
 		"COMPONENT_TEMPLATE" => "slider"
 	),
