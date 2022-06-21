@@ -39,7 +39,7 @@ $APPLICATION->SetTitle('ТКМ - Парк такси');
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "N",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "",
+		"NEWS_COUNT" => "100",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
