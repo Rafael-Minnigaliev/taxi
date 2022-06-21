@@ -2,9 +2,7 @@
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 	die();
 }
-
 use Bitrix\Main\Page\Asset;
-
 ?>
 
 <!doctype html>
@@ -14,13 +12,50 @@ use Bitrix\Main\Page\Asset;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<?php $APPLICATION->ShowHead(); ?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
-	<?php Asset::getInstance()->AddCss(SITE_TEMPLATE_PATH . '/css/style.css') ?>
-	<?php Asset::getInstance()->AddCss('https://unpkg.com/aos@2.3.1/dist/aos.css') ?>
-	<?php Asset::getInstance()->AddCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css') ?>
-	<?php Asset::getInstance()->AddCss('https://unpkg.com/swiper@7/swiper-bundle.min.css') ?>
-	<?php Asset::getInstance()->AddJs('https://unpkg.com/swiper@7/swiper-bundle.min.js') ?>
-	<?php Asset::getInstance()->AddJs(SITE_TEMPLATE_PATH . '/js/main.js') ?>
-	<?php Asset::getInstance()->AddJs(SITE_TEMPLATE_PATH . '/js/aos.js') ?>
+	<?php
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/style.css');
+	Asset::getInstance()->addString('<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">');
+	Asset::getInstance()->addString('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>');
+	Asset::getInstance()->addString('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>');
+	Asset::getInstance()->addJs('https://unpkg.com/swiper@7/swiper-bundle.min.js');
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/aos.js');
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
+	?>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const menuSwiper = ['Slide 1', 'Slide 2', 'Slide 3'];
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+            centeredSlides: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                // 	renderBullet: function (index, className) {
+                // 		return '<span class="' + className + '">' + (menuSwiper[index]) + '</span>';
+                // 	},
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // autoplay: {
+            // 	delay: 2500,
+            // 	disableOnInteraction: false,
+            // },
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
     <script>AOS.init();</script>
 </head>
 <body>
@@ -50,3 +85,16 @@ use Bitrix\Main\Page\Asset;
 		); ?>
     </div>
 </header>
+
+<!-- modals -->
+<div id="modal-container">
+    <div class="modal-background">
+        <div class="modal">
+            <div class="container">
+                <div class="closeModal"></div>
+                <h2 id="modal_title">inner</h2>
+                <p id="modal_text">inner</p>
+            </div>
+        </div>
+    </div>
+</div>

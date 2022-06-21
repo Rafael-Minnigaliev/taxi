@@ -30,7 +30,7 @@ html {
   font-size: 16px;
   line-height: 130%;
   color: black;
-  background-image: url("/images/bg-head.svg");
+  background-image: url("../images/bg-head.svg");
   background-repeat: no-repeat;
   overflow-x: hidden !important;
 }
@@ -264,7 +264,7 @@ input {
   cursor: pointer;
   border-radius: 40px;
   display: none;
-  background-image: url("/images/top.svg");
+  background-image: url("../images/top.svg");
 }
 @media screen and (max-width: 575px) {
   .back_to_top {
@@ -309,7 +309,7 @@ input {
   width: 100%;
   min-height: 800px;
   margin-top: 12rem;
-  background-image: url("/images/footer-form.png");
+  background-image: url("../images/footer-form.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -326,7 +326,7 @@ header {
   background-color: #FAFAFA;
   z-index: 10;
   width: 100%;
-  background-image: url("/images/bg-head.svg");
+  background-image: url("../images/bg-head.svg");
   background-repeat: no-repeat;
 }
 
@@ -478,7 +478,7 @@ header {
 .image-banner {
   height: 560px;
   width: 1220px;
-  background-image: url("/images/banner-1.png");
+  background-image: url("../images/banner-1.png");
 }
 
 .privilege {
@@ -568,7 +568,7 @@ header {
   position: absolute;
   left: -240px;
   top: 91px;
-  background-image: url("/images/cub.svg");
+  background-image: url("../images/cub.svg");
   background-repeat: no-repeat;
   background-position: left bottom;
   height: 100%;
@@ -701,7 +701,7 @@ header {
   max-width: 505px;
   width: 100%;
   height: 75px;
-  background-image: url("/images/shevron.svg");
+  background-image: url("../images/shevron.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -739,7 +739,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/images/bg_ya.png");
+  background-image: url("../images/bg_ya.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -793,7 +793,7 @@ header {
   position: absolute;
   top: 50px;
   right: 50px;
-  background-image: url("/images/close.svg");
+  background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   height: 50px;
   width: 50px;
@@ -2743,7 +2743,7 @@ footer .footer-mobile .content {
 .accordion__icon {
   width: 30px;
   height: 30px;
-  background-image: url("/images/arrow.svg");
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-transform: rotate(0deg);
@@ -2775,7 +2775,7 @@ footer .footer-mobile .content {
 }
 
 .active .accordion__icon {
-  background-image: url("/images/close.svg");
+  background-image: url("../images/close.svg");
 }
 
 .more_btn {
@@ -2910,7 +2910,7 @@ input[type=range] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url("/images/bg-calc.svg");
+  background-image: url("../images/bg-calc.svg");
   background-position: 710px 40%;
   background-repeat: no-repeat;
 }
@@ -3099,6 +3099,18 @@ input[type=range] {
   .swiper {
     width: 100%;
   }
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
 }
 
 .slide {
@@ -3347,7 +3359,7 @@ input[type=range] {
 }
 @media screen and (max-width: 1024px) {
   .round_num:after {
-    content: url("/images/dot_right.svg");
+    content: url("../images/dot_right.svg");
     position: absolute;
     width: 100px;
     top: 24px;
@@ -3363,7 +3375,7 @@ input[type=range] {
 }
 @media screen and (max-width: 1024px) {
   .round_num__left:after {
-    content: url("/images/dot_left.svg");
+    content: url("../images/dot_left.svg");
     position: absolute;
     width: 100px;
     top: 24px;

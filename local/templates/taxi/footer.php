@@ -104,3 +104,4 @@ use Bitrix\Main\Localization\Loc;
     </div>
 </footer>
 </body>
+</html>
