@@ -3101,6 +3101,18 @@ input[type=range] {
   }
 }
 
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
 .slide {
   margin: 0 auto;
   max-width: 1440px;
